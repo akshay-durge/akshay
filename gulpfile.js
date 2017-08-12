@@ -14,21 +14,21 @@ var jshint = require('gulp-jshint'),
     del = require('del');
 
 
-gulp.task('default', ['clean'], function() {
-  gulp.start('styles');
-});
+// gulp.task('default', ['clean'], function() {
+//   gulp.start('styles');
+// });
 
-gulp.task('styles', function(done) {
-  gulp.src('./app/src/assets/styles/index.less')
-    .pipe(less())
-    .pipe(gulp.dest('./app/dist/assets/styles/'))
-    .pipe(cssnano())
-    .pipe(rename({ extname: '.min.css' }))
-    .pipe(gulp.dest('./app/dist/assets/styles/'))
-    .pipe(notify({ message: 'Less Styles Task Complete' }));
-});
+// gulp.task('styles', function(done) {
+//   gulp.src('./app/src/assets/styles/index.less')
+//     .pipe(less())
+//     .pipe(gulp.dest('./app/dist/assets/styles/css/'))
+//     .pipe(cssnano())
+//     .pipe(rename({ extname: '.min.css' }))
+//     .pipe(gulp.dest('./app/dist/assets/styles/css/'))
+//     .pipe(notify({ message: 'Less Styles Task Complete' }));
+// });
 
 // Clean
 gulp.task('clean', function() {
-  return del(['./app/dist/assets/styles/*']);
+  return del(['./app/dist/assets/styles/css/*']);
 });
