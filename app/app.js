@@ -1,14 +1,27 @@
 'use strict';
 
 // Declare app level module which depends on views, and components
-angular.module('myApp', [
-  'ngRoute',
-  'myApp.view1',
-  'myApp.view2',
-  'myApp.version'
-]).
-config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
-  $locationProvider.hashPrefix('!');
+var akshay = angular.module('akshay', ['ui.router']);
+akshay.config(function($stateProvider, $urlRouterProvider) {
 
-  $routeProvider.otherwise({redirectTo: '/view1'});
-}]);
+	$urlRouterProvider.otherwise('/landing');
+
+    $stateProvider
+        .state('landing', {
+            url: '/landing',
+            templateUrl: 'views/landing.html'
+        })
+
+        // HOME STATES AND NESTED VIEWS ========================================
+        .state('home', {
+            url: '/home',
+            templateUrl: 'views/view2.html'
+        })
+
+        // ABOUT PAGE AND MULTIPLE NAMED VIEWS =================================
+        .state('about', {
+            url: '/about',
+            templateUrl: 'views/view2.html'   
+        });
+
+});
