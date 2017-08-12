@@ -10,10 +10,26 @@ body.bg-gradient::before {
   left: 0;
   transform: skew(0deg, -20deg);
 }
-.site_root{
-  max-width: 980px;
-  margin: 0 auto;
+.first_root{
+/*  max-width: 980px;
+  margin: 0 auto;*/
 }
+.second_root{
+    /*background-image: url('/dist/assets/images/mountan.webp');*/
+/*    height: 2909px;
+    object-fit: cover;
+    position: relative;*/
+}
+.second_root .layer{
+/*    position: absolute;
+    background: rgb(9, 19, 48);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.3;*/
+}
+ 
 .hero-info{
   margin: 100px 50px;
   color: #fff;
@@ -25,7 +41,11 @@ body.bg-gradient::before {
 .hero-info h3{
   text-transform: uppercase;
 }
-#about{
+#home .container{
+  max-width: 980px;
+  margin: 0 auto;
+}
+#about .container{
     min-height: 264px;
     background: #333b50;
     color: #fff;
@@ -58,7 +78,9 @@ body.bg-gradient::before {
 }
 #about.shadow{
     box-shadow: 12px 15px 20px 0 rgba(46,61,73,.15);
-    transition: all .3s ease;
+}
+#professional{
+
 }
 @media screen and (min-width: 767px) {
   body.bg-gradient::before {
