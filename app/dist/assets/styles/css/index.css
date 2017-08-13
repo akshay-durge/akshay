@@ -1,3 +1,6 @@
+body{
+    color: #2A3A3F;
+}
 body.bg-gradient::before {
   content: '';
   width: 100%;
@@ -29,15 +32,25 @@ body.bg-gradient::before {
     right: 0;
     opacity: 0.3;*/
 }
+section{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+section.landing{
+    padding-top: 0;
+    padding-bottom: 0;
+}
 section .title{
     color: #fff;
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
-    padding-top: 100px;
     padding-bottom: 100px;
     font-size: 40px;
     letter-spacing: 3px;    
+} 
+section .title.blk{
+    color: #2A3A3F;    
 } 
 .hero-info{
   margin: 100px 50px;
@@ -102,10 +115,24 @@ section .title{
     border: solid rgb(255, 255, 255) 1px;
 }
 #about.shadow{
-    box-shadow: 12px 15px 20px 0 rgba(46,61,73,.15);
+    /*box-shadow: 12px 15px 20px 0 rgba(46,61,73,.15);*/
 }
 #professional{
 
+}
+.expertise_block{
+    text-align: center;
+}
+.expertise_block i{
+    font-size: 60px;
+    color: #5da1c4;
+}
+.expertise_block h4{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 25px;
+    margin-top: 20px;    
 }
 @media screen and (min-width: 767px) {
   body.bg-gradient::before {
