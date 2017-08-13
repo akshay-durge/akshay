@@ -82,7 +82,7 @@
   width: 15px;
 }
 .timeline-marker:before {
-  background: #FF6B6B;
+  background: #9488ca;
   border: 3px solid transparent;
   border-radius: 100%;
   content: "";
@@ -97,7 +97,8 @@
 .timeline-marker:after {
   content: "";
   width: 3px;
-  background: #CCD5DB;
+      background: rgb(204, 213, 219);
+
   display: block;
   position: absolute;
   top: 24px;
@@ -110,7 +111,7 @@
 
 .timeline-item:not(.period):hover .timeline-marker:before {
   background: transparent;
-  border: 3px solid #FF6B6B;
+  border: 3px solid #9488ca;
 }
 
 /*----- TIMELINE CONTENT -----*/
@@ -119,6 +120,9 @@
 }
 .timeline-content p:last-child {
   margin-bottom: 0;
+}
+.timeline-content h4{
+    font-size: 14px;
 }
 
 /*----- TIMELINE PERIOD -----*/
@@ -138,8 +142,8 @@
   top: 0;
   bottom: 30px;
   position: absolute;
-  border-top: 3px solid #CCD5DB;
-  border-bottom: 3px solid #CCD5DB;
+  border-top: 3px solid rgb(204, 213, 219);
+  border-bottom: 3px solid rgb(204, 213, 219);
 }
 .period .timeline-marker:after {
   content: "";
@@ -152,7 +156,9 @@
 .period .timeline-title {
   margin: 0;
 }
-
+.timeline-title + p {
+    text-transform: uppercase;
+}
 /*----------------------------------------------
     MOD: TIMELINE SPLIT
 ----------------------------------------------*/
@@ -259,8 +265,8 @@
 ----------------------------------------------*/
 .marker-outline .timeline-marker:before {
   background: transparent;
-  border-color: #FF6B6B;
+  border-color: #9488ca;
 }
 .marker-outline .timeline-item:hover .timeline-marker:before {
-  background: #FF6B6B;
+  background: #9488ca;
 }

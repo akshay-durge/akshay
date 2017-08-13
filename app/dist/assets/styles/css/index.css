@@ -73,9 +73,9 @@ section .title{
 }
 #experience{
     background-image: url('/dist/assets/images/mountan.webp');
-    background-position: center top -500px;
+    background-position: center top -700px;
     background-repeat: no-repeat;
-    min-height: 2000px;
+    min-height: 1700px;
     position: relative;
 }
 #experience .layer{
