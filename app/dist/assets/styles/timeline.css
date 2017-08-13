@@ -71,6 +71,7 @@
   margin: 0 0 .5em 0;
   text-transform: uppercase;
   white-space: nowrap;
+    color: #02b5eb;
 }
 
 /*----- TIMELINE MARKER -----*/
@@ -82,7 +83,7 @@
   width: 15px;
 }
 .timeline-marker:before {
-  background: #9488ca;
+  background: #02b3e4;
   border: 3px solid transparent;
   border-radius: 100%;
   content: "";
@@ -111,7 +112,7 @@
 
 .timeline-item:not(.period):hover .timeline-marker:before {
   background: transparent;
-  border: 3px solid #9488ca;
+  border: 3px solid #02b3e4;
 }
 
 /*----- TIMELINE CONTENT -----*/
@@ -265,8 +266,11 @@
 ----------------------------------------------*/
 .marker-outline .timeline-marker:before {
   background: transparent;
-  border-color: #9488ca;
+  border-color: #02b3e4;
 }
 .marker-outline .timeline-item:hover .timeline-marker:before {
-  background: #9488ca;
+  background: #02b3e4;
 }
+
+
+

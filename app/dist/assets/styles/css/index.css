@@ -109,8 +109,8 @@ section .title.blk{
     cursor: pointer !important;   
     transition: background-color .6s ease;
 }
-.cta:hover{
-    background-color: #54a6c4;
+.cta:hover,.cta:focus{
+    background-color: #02b3e4;
     color: #fff;
     border: solid rgb(255, 255, 255) 1px;
 }
@@ -125,7 +125,7 @@ section .title.blk{
 }
 .expertise_block i{
     font-size: 60px;
-    color: #5da1c4;
+    color: #02b3e4;
 }
 .expertise_block h4{
     text-transform: uppercase;
