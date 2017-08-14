@@ -1,5 +1,7 @@
 body{
-    color: #2A3A3F;
+    color: #524e4d;
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
 }
 body.bg-gradient::before {
   content: '';
@@ -53,8 +55,8 @@ section .title.blk{
     color: #2A3A3F;    
 } 
 footer{
-    color: #fff;
-    background-color: #333b50;
+    /*color: #5f6465;*/
+    background-color: #fff;
     text-align: center;
     padding: 50px;
 }
@@ -70,13 +72,13 @@ footer .social_links a{
     width: 36px;
     font-size: 1.6rem;
     line-height: 2.3;
-    background-color: rgba(0,0,0,0.1);
+    background-color: #5f6465;
     border-radius: 50px;
     transition: all .3s ease-in-out;
 }
 footer .social_links a:hover {
     color: #fff;
-    background-color: rgba(0,0,0,0.3);
+    /*background-color: rgba(0,0,0,0.3);*/
     border: none;
 }
 .hero-info{
@@ -94,7 +96,7 @@ footer .social_links a:hover {
     padding-top: 100px;
 }
 .hero_content{
-    padding-top: 100px;
+    padding-top: 50px;
     text-align: center;
         font-size: 24px;
     margin: 0 100px;
@@ -143,7 +145,7 @@ footer .social_links a:hover {
     background-image: url('/dist/assets/images/mountan.webp');
     background-position: center top -700px;
     background-repeat: no-repeat;
-    min-height: 1700px;
+    min-height: 1500px;
     position: relative;
 }
 #experience .layer{
@@ -177,6 +179,20 @@ footer .social_links a:hover {
     font-size: 24px;
     margin-bottom: 25px;
     margin-top: 20px;    
+}
+#contact{
+    background: #02b3e4;
+    color: #fff;
+}
+#contact .title{
+    color: #fff;
+}
+#contact .cta{
+    border: solid #fff 1px;
+}
+#contact .cta:hover,#contact .cta:focus{
+    background-color: #fff;
+    color: #524e4d;
 }
 @media screen and (min-width: 767px) {
   body.bg-gradient::before {
