@@ -27,8 +27,15 @@
   <script src="./angular-ui-router.min.js"></script>
 
   <script src="app.js"></script>
-
-  <script type="text/javascript" color="2,179,228" opacity='0.9' zIndex="-1" count="100" src="./dist/assets/scripts/canvas-nest.js"></script>
+  <script>
+  if (screen && screen.width > 480) {
+    document.write('<script type="text/javascript" color="2,179,228" opacity="0.9" zIndex="-1" count="120" src="./dist/assets/scripts/canvas-nest.js"><\/script>');
+  }
+  if (screen && screen.width < 480) {
+    document.write('<script type="text/javascript" color="2,179,228" opacity="0.9" zIndex="-1" count="20" src="./dist/assets/scripts/canvas-nest.js"><\/script>');
+  }
+  </script>
+  
 
 </body>
 </html>

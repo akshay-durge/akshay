@@ -2,6 +2,7 @@ body{
     color: #524e4d;
     background-color: #fff;
     font-family: 'Roboto', sans-serif;
+    letter-spacing: 1.2px;
 }
 body.bg-gradient::before {
   content: '';
@@ -151,6 +152,7 @@ footer .social_links a:hover {
     background-repeat: no-repeat;
     min-height: 1500px;
     position: relative;
+    background-size: cover;
 }
 #experience .layer{
     position: absolute;
@@ -197,6 +199,37 @@ footer .social_links a:hover {
 #contact .cta:hover,#contact .cta:focus{
     background-color: #fff;
     color: #524e4d;
+}
+@media screen and (max-width: 480px) {
+    .hero-info {
+        margin-top: 50px;
+    }    
+  .hero-info h3{
+    color: #2A3A3F;
+    font-size: 18px;
+    font-weight: bold;
+  }
+    #about .container {
+        padding: 40px;
+    }
+    .cta {
+        font-size: 15px;
+    }
+    section .title{
+        font-size: 30px;
+    }
+    .hero_grid {
+        padding-top: 60px;
+    }
+    .hero_content {
+        margin: 0 40px;
+    }    
+    h3{
+        font-size: 21px;
+    }
+    .expertise_block p{
+        margin-bottom: 50px;
+    }
 }
 @media screen and (min-width: 767px) {
   body.bg-gradient::before {
