@@ -16,6 +16,12 @@ body.bg-gradient::before {
   left: 0;
   transform: skew(0deg, -20deg);
 }
+.mute{
+  color: #ccc;
+}
+.mute span{
+  color: #fff;
+}
 .first_root{
 /*  max-width: 980px;
   margin: 0 auto;*/
@@ -50,11 +56,11 @@ section .title{
     text-align: center;
     /*padding-bottom: 100px;*/
     font-size: 40px;
-    letter-spacing: 1.3px;    
-} 
+    letter-spacing: 1.3px;
+}
 section .title.blk{
-    color: #2A3A3F;    
-} 
+    color: #2A3A3F;
+}
 footer{
     /*color: #5f6465;*/
     background-color: transparent;
@@ -106,13 +112,25 @@ footer .social_links a:hover {
 .hero_content .cta{
     margin-top: 50px;
 }
+.hero_image{
+  margin: 50px auto 0 auto;
+  width: 320px;
+  height: 320px;
+  border-radius: 100%;
+  overflow: hidden;
+  border: 5px solid #fff;
+}
+.hero_image img{
+  width: 123%;
+  height: 100%;
+}
 .cta{
     font-size: 18px;
     font-weight: bold;
     padding: 13px 20px;
     background-color: transparent;
     border: solid rgb(136, 142, 201) 1px;
-    cursor: pointer !important;   
+    cursor: pointer !important;
     transition: background-color .6s ease;
     letter-spacing: 0.7px;
     text-transform: uppercase;
@@ -126,6 +144,9 @@ footer .social_links a:hover {
   max-width: 980px;
   margin: 0 auto;
 }
+#about{
+  padding-top: 50px;
+}
 #about .container{
     min-height: 264px;
     background: #333b50;
@@ -133,6 +154,9 @@ footer .social_links a:hover {
     padding: 80px 100px;
     padding-bottom: 60px;
     text-align: center;
+}
+#about h2{
+  text-transform: uppercase;
 }
 #about p{
     max-width: 550px;
@@ -144,7 +168,7 @@ footer .social_links a:hover {
     margin-top: 50px;
 }
 #expertise{
-    background-color: #fff;
+    /*background-color: #fff;*/
 }
 #experience{
     background-image: url('/dist/assets/images/mountan.webp');
@@ -184,7 +208,7 @@ footer .social_links a:hover {
     font-weight: bold;
     font-size: 24px;
     margin-bottom: 25px;
-    margin-top: 20px;    
+    margin-top: 20px;
 }
 #contact{
     background: #02b3e4;
@@ -203,7 +227,7 @@ footer .social_links a:hover {
 @media screen and (max-width: 480px) {
     .hero-info {
         margin-top: 50px;
-    }    
+    }
   .hero-info h3{
     color: #2A3A3F;
     font-size: 18px;
@@ -223,13 +247,19 @@ footer .social_links a:hover {
     }
     .hero_content {
         margin: 0 40px;
-    }    
+    }
     h3{
         font-size: 21px;
     }
     .expertise_block p{
         margin-bottom: 50px;
     }
+}
+@media screen and (max-width: 766px) {
+  .hero-info{
+    text-align: center;
+    color: #000;
+  }
 }
 @media screen and (min-width: 767px) {
   body.bg-gradient::before {
